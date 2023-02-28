@@ -1,13 +1,24 @@
 footer{
-    padding: 3rem 0;
+    position: relative;
+    padding: 7rem 0 3rem;
     font-family: helvetica, sans-serif ;
+    z-index: 60;
+    @include media-for (null, $tablet){
+        padding: 2rem 0 3rem;
+    }
     h4{
         font-size: 20px;
         font-family: $userfont;
         line-height: .8;
+        @include media-for (null, $tablet){
+            font-size: 16px;
+        }
     }
     .mail-footer{
         font-size: 82px;
+        @include media-for (null, $tablet){
+            font-size: 28px;
+        }
     }
     .footer-logo{
         display: block;
@@ -15,6 +26,10 @@ footer{
         width: 79px;
         &:hover{
             transform: scale(1);
+        }
+        @include media-for (null, $sm){
+            margin-right: auto;
+            margin-left: 0;
         }
     }
 }

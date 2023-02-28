@@ -33,11 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 
 
-  //slider-element-click
 
-//   $('.slide-card').on('click', function(){
-//     $('.slide-card').removeClass('slide-selected');
-//     $(this).addClass('slide-selected');
-//   });;
 
 })

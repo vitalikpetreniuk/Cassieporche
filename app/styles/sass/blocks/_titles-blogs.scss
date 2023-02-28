@@ -16,6 +16,10 @@
             transition: all .4s ease-in-out;
             border-top: 1px solid  rgba($color: #0000, $alpha: .0);
             cursor: pointer;
+
+            @include media-for (null, $tablet){
+                padding: .5rem 0;
+            }
             
             &:first-child{
                 border-top: 1px solid $border;
@@ -36,10 +40,19 @@
                 position: relative;
                 max-width: 59%;
                 display: inline-block;
+
+                @include media-for (null, $tablet){
+                    max-width: 64%;
+                }
+
                 h3{
                     font-size: 82px;
                     font-weight: 400;
                     display: inline-block;
+
+                    @include media-for (null, $tablet){
+                        font-size: 25px;
+                    }
                 }
         
                 time{
@@ -49,6 +62,10 @@
                     right: 0;
                     top: 50%;
                     transform: translate(100%,-50%);
+
+                    @include media-for (null, $tablet){
+                        position: relative;
+                    }
                 }
             }
 

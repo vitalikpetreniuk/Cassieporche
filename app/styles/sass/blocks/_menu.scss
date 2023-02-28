@@ -8,24 +8,35 @@
     visibility: hidden;
     opacity: 0;
     text-align:center;
-    padding-top:20px;
     transition: all 0.3s ease-in-out;
     left: 0;
     li{
         list-style:none;
         
         a{
-            display:block;
-            font-size: 32px;
-            margin-bottom:30px;
-            text-decoration:none;
+            text-align: left !important;
+            display: block;
         }
     }
     .menu-header{
+        display: flex;
+
+        @include media-for (null, $sm){
+            display: block;
+        }
+
         ul{
             display: flex;
+
+            @include media-for (null, $sm){
+                justify-content: space-between;
+            }
+
             li{
                 margin-right: 4rem;
+                @include media-for (null, $sm){
+                    margin-right: 0;
+                }
                 a{
                     font-size: 20px;
                 }
@@ -34,11 +45,36 @@
     }
 
     nav{
+        margin-top: 6rem;
+        @include media-for (null, $tablet){
+            margin-top: 6rem;
+        }
+        @include media-for (null, $sm){
+            margin-top: 0rem;
+        }
         ul{
             li{
                 font-family: helvetica, sans-serif ;
                 a{
                     font-size: 82px;
+                    width: 35%;
+                    margin: auto;
+
+                    @include media-for (null, $tablet){
+                        font-size: 52px;
+                        margin-bottom: .5rem;
+                    }
+
+                    @include media-for (null, $sm){
+                        font-size: 42px;
+                        margin-bottom: .5rem;
+                        width: 100%;
+                    }
+                }
+            }
+            &:last-child{
+                @include media-for (null, $tablet){
+                    margin-bottom: 5rem;
                 }
             }
         }
@@ -48,10 +84,13 @@
     &.overlay{
         visibility: visible;
         opacity: 1;
-        padding-top: 3rem;
         background: $white;
         z-index: 100;
         height: 100vh;
+        padding-top: 3rem;
+        @include media-for (null, $sm){
+            padding-top: 6rem;
+        }
     }
 }
   

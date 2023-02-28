@@ -6,6 +6,10 @@
     margin-right: 0;
     width: 40px;
     margin-bottom: 1rem;
+    @include media-for (null, $sm){
+        margin-bottom: 0;
+        margin-left: 1.5rem;
+    }
     span{
         display: block;
         height: 3px;
@@ -25,7 +29,7 @@
 
     span:first-child{
         transform: rotate(45deg);
-        top: 18px;
+        top: 7px;
     }
 
     span:nth-child(2n){
@@ -35,6 +39,6 @@
 
     span:last-child{
         transform: rotate(-45deg);
-        top: -6px;
+        top: -17px;
     }
 }
