@@ -47,6 +47,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	
 
+	const blogList = document.querySelector('.titles-blogs-wrap');
+	
+	blogList.addEventListener('wheel', function(ev) {
+		let blogsItems = this.querySelectorAll('.titles-blogs-item');
+
+		if (ev.wheelDelta > 0) {
+			this.prepend(blogsItems[blogsItems.length - 1]);
+		} else {
+			this.append(blogsItems[0]);
+		}
+	});
 
 
 })

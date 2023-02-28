@@ -3,6 +3,11 @@
 
     .titles-blogs-wrap{
         transition: all .4s ease-in-out;
+        height: 80vh;
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+            width: 0;
+        }
         &:hover{
             .title-wrap{
                 color: $border;
