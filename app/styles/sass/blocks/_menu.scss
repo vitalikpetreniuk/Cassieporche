@@ -1,0 +1,57 @@
+#menu-burger,#menu-category{
+    z-index:1;
+    min-width:100%;
+    min-height:100%;
+    position: fixed;
+    top:0;
+    height:0;
+    visibility: hidden;
+    opacity: 0;
+    text-align:center;
+    padding-top:20px;
+    transition: all 0.3s ease-in-out;
+    left: 0;
+    li{
+        list-style:none;
+        
+        a{
+            display:block;
+            font-size: 32px;
+            margin-bottom:30px;
+            text-decoration:none;
+        }
+    }
+    .menu-header{
+        ul{
+            display: flex;
+            li{
+                margin-right: 4rem;
+                a{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    nav{
+        ul{
+            li{
+                font-family: helvetica, sans-serif ;
+                a{
+                    font-size: 82px;
+                }
+            }
+        }
+    }
+
+    
+    &.overlay{
+        visibility: visible;
+        opacity: 1;
+        padding-top: 3rem;
+        background: $white;
+        z-index: 100;
+        height: 100vh;
+    }
+}
+  

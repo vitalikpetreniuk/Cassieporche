@@ -1,0 +1,40 @@
+#burger{
+    position: relative;
+    cursor: pointer;
+    z-index: 150;
+    margin-left: auto;
+    margin-right: 0;
+    width: 40px;
+    margin-bottom: 1rem;
+    span{
+        display: block;
+        height: 3px;
+        width: 40px;
+        background-color: $balck;  
+        position: relative;
+        transition: .2s all ease-in;
+        margin-bottom: 9px;
+        
+        &:last-child{
+            margin-bottom: 0px;
+        }
+    } 
+}
+
+.burger-active{
+
+    span:first-child{
+        transform: rotate(45deg);
+        top: 18px;
+    }
+
+    span:nth-child(2n){
+        opacity: 0;
+        transition: .2s all ease-in;
+    }
+
+    span:last-child{
+        transform: rotate(-45deg);
+        top: -6px;
+    }
+}

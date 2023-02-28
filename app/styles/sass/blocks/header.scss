@@ -1,0 +1,22 @@
+header{
+	padding: 2rem 0;
+	button{
+		position: relative;
+		display: block;
+		width: 40px;
+		z-index: 150;
+		border-radius: 100%;
+	}
+	.btn-category-active{
+		background-color: $balck;
+		svg{
+			fill: $balck;
+			path{
+				fill: $white;
+				&:first-child{
+					fill: none;
+				}
+			}
+		}
+	}
+}
