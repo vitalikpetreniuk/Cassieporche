@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	burger.addEventListener('click',function(){
 		this.classList.toggle("burger-active");
 		burgerMenu.classList.toggle("overlay");
-		body.classList.toggle("overflow");
 
 		cateryMenu.classList.remove("overlay");
 		categoryBtn.classList.remove("btn-category-active");
@@ -26,13 +25,30 @@ document.addEventListener('DOMContentLoaded', () => {
 	categoryBtn.addEventListener('click',function(){
 		this.classList.toggle("btn-category-active");
 		cateryMenu.classList.toggle("overlay");
-		body.classList.toggle("overflow");
 
 		burgerMenu.classList.remove("overlay");
 		burger.classList.remove("burger-active");
 	});
 
+	
+
+	$('#btn-category , #burger').on('click', function(){
+
+		if($('#menu-category, #menu-burger').hasClass('overlay')){
+			
+			body.classList.add("overflow");
+	
+		}else{
+			
+			body.classList.remove("overflow");
+	
+		}
+	});
+
+	
 
 
 
 })
+
+
