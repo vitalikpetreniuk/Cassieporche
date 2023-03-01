@@ -5,6 +5,10 @@
         transition: all .4s ease-in-out;
         height: 80vh;
         overflow-y: scroll;
+        background-size: 65%;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+
         &::-webkit-scrollbar {
             width: 0;
         }
@@ -74,10 +78,6 @@
                 }
             }
 
-    
-            img{
-                display: none;
-            }
         }
     }
 
