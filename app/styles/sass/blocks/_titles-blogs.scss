@@ -15,8 +15,28 @@
             width: 0;
         }
         &:hover{
-            .title-wrap{
-                color: $border;
+            
+            .titles-blogs-item{
+                border-bottom: 1px solid $border;
+                border-top: 1px solid  $border;
+
+                &:first-child{
+                    border-top: 1px solid $border;                  
+                }
+
+                .title-wrap{
+                    color: $balck;
+                    time{
+                        color: $border;
+                    }
+                }
+              
+                a{
+                    color: $border;
+                    &:hover{
+                        color: $border;
+                    } 
+                }
             }
         }
         
@@ -24,7 +44,7 @@
             position: relative;
             padding: 1rem 0;
             transition: all .4s ease-in-out;
-            border-bottom: 1px solid $border;
+            border-bottom: 1px solid $balck;
             border-top: 1px solid  rgba($color: #0000, $alpha: .0);
             cursor: pointer;
 
@@ -35,7 +55,8 @@
             }
             
             &:first-child{
-                border-top: 1px solid $border;
+                border-top: 1px solid $balck;
+                
             }
     
             &:hover{
@@ -43,13 +64,20 @@
                 border-top: 1px solid  $black;
                 .title-wrap{
                     color: $balck;
+                    time{
+                        color: $black;
+                    }
+                    a{
+                        color: $black;
+                    }
                 }
+
             }
+
             a{
-                color: $border;
+                color: $black;
                 &:hover{
                     transform: scale(1);
-                    color: $balck;
                 } 
             }
 
