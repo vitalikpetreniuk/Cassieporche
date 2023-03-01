@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 
 		$(".titles-blogs-wrap").css("background-image", "url(" + $(this).data("bg-img") + ")");
-		// $(".titles-blogs-wrap").css("border-bottom", "rgba($color: #0000, $alpha: .20)");
+		
 	});
 
 	$(".titles-blogs-item").on('mouseleave',function() {
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 
 		$(".titles-blogs-wrap").css("background-image", "none");
-		// $(".titles-blogs-wrap").css("border-bottom", "rgba($color: #0000, $alpha: .20)");
+	
 	});
 
 
