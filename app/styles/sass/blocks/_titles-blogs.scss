@@ -17,12 +17,6 @@
         &:hover{
             
             .titles-blogs-item{
-                border-bottom: 1px solid $border;
-                border-top: 1px solid  $border;
-
-                &:first-child{
-                    border-top: 1px solid $border;                  
-                }
 
                 .title-wrap{
                     color: $balck;
@@ -44,8 +38,6 @@
             position: relative;
             padding: 1rem 0;
             transition: all .4s ease-in-out;
-            border-bottom: 1px solid $balck;
-            border-top: 1px solid  rgba($color: #0000, $alpha: .0);
             cursor: pointer;
 
             @include media-for (null, $tablet){
@@ -53,18 +45,9 @@
                 display: flex;
                 justify-content: space-between;
             }
-            
-            &:first-child{
-                border-top: 1px solid $balck;
-                
-            }
     
             &:hover{
-                border-bottom: 1px solid $black;
-                border-top: 1px solid  $black;
-                &:first-child{
-                    border-top: 1px solid $black;                  
-                }
+
                 .title-wrap{
                     color: $balck;
                     time{
@@ -94,7 +77,7 @@
                 }
 
                 h3{
-                    font-size: 82px;
+                    font-size: 71px;
                     font-weight: 400;
                     display: inline-block;
 

@@ -83,14 +83,12 @@ document.addEventListener('DOMContentLoaded', () => {
 		const th = $(this);
 
 		$("body").css('background-color', function() {
-			return '#ffff';
+			return '#D8E377';
 		});
 
 		$(".titles-blogs-wrap").css("background-image", "none");
 	
 	});
-
-
 
 
 
