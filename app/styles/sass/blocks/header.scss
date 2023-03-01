@@ -6,7 +6,7 @@ header{
 	.logo{
 		svg{
 			width: 401px;
-			height: 148px;
+			height: 88px;
 			@include media-for (null, $tablet){
 				width: 205px;
 				height: 57px;
@@ -16,14 +16,12 @@ header{
 	button{
 		position: relative;
 		display: block;
-		z-index: 150;
 		border-radius: 100%;
 		font-size: 20px;
 	}
 
 	.btn-category-active{
-		text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
-		1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
-		color: $white;
+		color: $black;
+		z-index: 150;
 	}
 }
