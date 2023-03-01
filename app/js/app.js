@@ -88,6 +88,12 @@ document.addEventListener('DOMContentLoaded', () => {
 		$(".titles-blogs-wrap").css("background-image", "none");
 	});
 
+	// if( window.innerWidth >= 576){
+	// 	$('.btn-category-car').css('display','block');
+	// }
+
+
+
 
 
 
