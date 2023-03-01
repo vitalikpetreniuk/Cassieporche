@@ -23,8 +23,8 @@
         .titles-blogs-item{
             position: relative;
             padding: 1rem 0;
-            border-bottom: 1px solid $border;
             transition: all .4s ease-in-out;
+            border-bottom: 1px solid $border;
             border-top: 1px solid  rgba($color: #0000, $alpha: .0);
             cursor: pointer;
 
@@ -39,13 +39,17 @@
             }
     
             &:hover{
+                border-bottom: 1px solid $black;
+                border-top: 1px solid  $black;
                 .title-wrap{
                     color: $balck;
                 }
             }
             a{
+                color: $border;
                 &:hover{
                     transform: scale(1);
+                    color: $balck;
                 } 
             }
 
