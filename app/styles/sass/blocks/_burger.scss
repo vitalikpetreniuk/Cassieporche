@@ -6,6 +6,10 @@
     margin-right: 0;
     width: 40px;
     margin-bottom: 1rem;
+    @include media-for (null, $sm){
+        margin-bottom: .5rem;
+    }
+    
     span{
         display: block;
         height: 3px;

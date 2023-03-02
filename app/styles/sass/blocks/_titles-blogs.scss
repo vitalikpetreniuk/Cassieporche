@@ -68,7 +68,6 @@
                 max-width: 59%;
                 display: inline-block;
                 z-index: 20;
-
                 @include media-for (null, $sm){
                     max-width: 64%;
                 }
@@ -116,6 +115,7 @@
                     width: 40%;
                     opacity: 1;
                     height: auto;
+                    left: 0;
                 }
                 @include media-for (null, $sm){
                     width: 36%;
@@ -123,6 +123,9 @@
                 img{
                     width: 100%;
                     object-fit: cover;
+                    @include media-for (null, $sm){
+                        height: 100%;
+                    }
                 }
             }
 
