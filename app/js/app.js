@@ -50,17 +50,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	//infinity-scroll
 
-	// const blogList = document.querySelector('.titles-blogs-wrap');
+	const blogList = document.querySelector('.titles-blogs-wrap');
 	
-	// blogList.addEventListener('wheel', function(ev) {
-	// 	let blogsItems = this.querySelectorAll('.titles-blogs-item');
+	blogList.addEventListener('wheel', function(ev) {
+		let blogsItems = this.querySelectorAll('.titles-blogs-item');
 
-	// 	if (ev.wheelDelta > 0) {
-	// 		this.prepend(blogsItems[blogsItems.length - 1]);
-	// 	} else {
-	// 		this.append(blogsItems[0]);
-	// 	}
-	// });
+		if (ev.wheelDelta > 0) {
+			this.prepend(blogsItems[blogsItems.length - 1]);
+		} else {
+			this.append(blogsItems[0]);
+		}
+	});
 
 
 	// change bg,hover-efect
@@ -75,14 +75,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	
 		if( window.innerWidth >= 822){
-			th.children('.img-wrap').removeClass('animate__backOutUp');
-			var close = setInterval(function(){
-				th.children('.img-wrap').addClass('animate__backInUp');
-				clearInterval(close);
-			  }, 300);
-		}
-	
+			th.children('.img-wrap').removeClass('animate__fadeOut');
 
+			th.children('.img-wrap').addClass('animate__fadeIn');
+	
+		}
 	});
 
 	$(".titles-blogs-item").on('mouseleave',function() {
@@ -95,8 +92,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		
 		if( window.innerWidth >= 822){
-			th.children('.img-wrap').removeClass('animate__backInUp');
-			th.children('.img-wrap').addClass('animate__backOutUp');
+			th.children('.img-wrap').removeClass('animate__fadeIn');
+			th.children('.img-wrap').addClass('animate__fadeOut');
 			
 		}	
 	
