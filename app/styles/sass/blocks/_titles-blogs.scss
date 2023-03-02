@@ -1,6 +1,18 @@
 .titles-blogs{
     font-family: helvetica, sans-serif ;
+    
+	button{
+        font-family: $userfont;
+		position: relative;
+		display: block;
+		border-radius: 100%;
+		font-size: 20px;
+		color: $black;
+	}
 
+	.btn-category-active{
+		z-index: 150;
+	}
     .titles-blogs-wrap{
         transition: all .4s ease-in-out;
         height: 80vh;

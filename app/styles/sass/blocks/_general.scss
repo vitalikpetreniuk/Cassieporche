@@ -2,9 +2,6 @@
 
 
 body{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     min-height: 100vh;
     transition: all .4s ease-in-out;
     background: $bg-body;
