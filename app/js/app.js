@@ -30,6 +30,10 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 
 	
+	$('.btn-category-off').on('click', function(){
+		$('#menu-category').removeClass('overlay')
+	});
+	
 
 	//review btn-category burger 
 
