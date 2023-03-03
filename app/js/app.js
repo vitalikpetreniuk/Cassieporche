@@ -69,8 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		const th = $(this);
 
-		$("body").css('background-color', th.data('bg-color'));
-		$("header").css('background-color', th.data('bg-color'))
+		$("body, header, .btns-top").css('background-color', th.data('bg-color'));
 
 	
 		if( window.innerWidth >= 822){
@@ -85,8 +84,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		const th = $(this);
 
-		$("body").css('background-color', '#D8E377');
-		$("header").css('background-color', '#D8E377')
+		$("body, header, .btns-top").css('background-color', '#D8E377');
+	
 		
 		if( window.innerWidth >= 822){
 			th.children('.img-wrap').removeClass('animate__fadeIn');
@@ -96,8 +95,9 @@ document.addEventListener('DOMContentLoaded', () => {
 	
 	});
 
+	//heigt-header fixed
+	$("main").css("margin-top", $("header, .btns-top").outerHeight()  + "px");
 
-	$("main").css("margin-top", $("header").outerHeight()  + "px");
 
 
 

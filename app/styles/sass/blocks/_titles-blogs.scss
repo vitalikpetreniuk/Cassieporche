@@ -1,24 +1,15 @@
 .titles-blogs{
+    position: relative;
     font-family: helvetica, sans-serif ;
-    
-	button{
-        font-family: $userfont;
-		position: relative;
-		display: block;
-		border-radius: 100%;
-		font-size: 20px;
-		color: $black;
-        @include media-for (null, $sm){
-            padding: 0;
-        }
-	}
+    height: 100%;
+    overflow: hidden;
 
 	.btn-category-active{
 		z-index: 150;
 	}
     .titles-blogs-wrap{
+        height: 100%;
         transition: all .4s ease-in-out;
-        height: 80vh;
         overflow-y: scroll;
         @include media-for (null, $tablet){
             background-image: none !important;
@@ -50,7 +41,7 @@
         }
         
         .titles-blogs-item{
-            margin: 1rem 0;
+            margin: 1.3rem 0;
             transition: all .4s ease-in-out;
             cursor: pointer;
 
