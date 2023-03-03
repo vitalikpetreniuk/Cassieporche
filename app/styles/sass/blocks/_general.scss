@@ -5,6 +5,9 @@ body{
     min-height: 100vh;
     transition: all .4s ease-in-out;
     background: $bg-body;
+    &::-webkit-scrollbar {
+        width: 0;
+    }
 }
 
 .container-fluid{
