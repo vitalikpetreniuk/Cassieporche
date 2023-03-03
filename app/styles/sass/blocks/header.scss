@@ -1,17 +1,20 @@
 header{
-	position: relative;
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 	padding: 0;
 	z-index: 60;
 	@include media-for (null, $sm){
-		padding: 1rem 0;
+		padding: .6rem 0 0;
 	}
 	.logo{
 		svg{
 			width: 401px;
 			height: 88px;
 			@include media-for (null, $tablet){
-				width: 205px;
-				height: 57px;
+				height: 52px;
+				width: 228px;
 			}
 		}
 	}

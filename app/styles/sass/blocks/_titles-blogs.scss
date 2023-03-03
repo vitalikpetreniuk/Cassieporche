@@ -1,4 +1,5 @@
 .titles-blogs{
+    // margin-top: 7rem;
     font-family: helvetica, sans-serif ;
     
 	button{
@@ -8,6 +9,9 @@
 		border-radius: 100%;
 		font-size: 20px;
 		color: $black;
+        @include media-for (null, $sm){
+            padding: 0;
+        }
 	}
 
 	.btn-category-active{
@@ -19,6 +23,9 @@
         overflow-y: scroll;
         @include media-for (null, $tablet){
             background-image: none !important;
+        }
+        @include media-for (null, $sm){
+            margin-top: 20px;
         }
         &::-webkit-scrollbar {
             width: 0;
@@ -53,7 +60,12 @@
                 display: flex;
                 justify-content: space-between;
             }
-    
+
+            @include media-for (null, $sm){
+                margin: 0 0 20px;
+                padding: 0;
+            }
+
             &:hover{
 
                 .title-wrap{
@@ -91,6 +103,11 @@
 
                     @include media-for (null, $tablet){
                         font-size: 25px;
+                    }
+                    @include media-for (null, $sm){
+                        display: block;
+                        margin: 0;
+                        line-height: .95;
                     }
                 }
         

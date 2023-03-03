@@ -100,6 +100,11 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 
 
+	///header-height
+
+	$("main").css("margin-top", $("header").outerHeight()  + "px");
+
+
 
 
 
