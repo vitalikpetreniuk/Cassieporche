@@ -41,7 +41,7 @@
         }
         
         .titles-blogs-item{
-            margin: 1.3rem 0;
+            margin: 2rem 0 1rem;
             transition: all .4s ease-in-out;
             cursor: pointer;
 
@@ -121,7 +121,7 @@
                 width: 1066px;
                 height: 555px;
                 left: 22%;
-                top: 17%;
+                top: 5%;
                 z-index: 10;
                 opacity: 0;
                 @include media-for (null, $mid-desktop){
