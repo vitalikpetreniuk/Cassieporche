@@ -4,6 +4,7 @@
     left: 0;
     background: $bg-body;
     z-index: 100;
+    transition: all .4s ease-in-out;
     button{
         font-family: $userfont;
 		position: relative;
