@@ -98,6 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	//heigt-header fixed
 	$("main").css("margin-top", $("header, .btns-top").outerHeight()  + "px");
 
+	$(".titles-blogs-wrap").css("margin-top", $(".btns-top").outerHeight()  + "px");
 
 
 
