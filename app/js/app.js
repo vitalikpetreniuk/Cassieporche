@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		const th = $(this);
 
-		$("body, header, .btns-top").css('background-color', th.data('bg-color'));
+		$("body, header, .btns-top, .menu-header").css('background-color', th.data('bg-color'));
 
 	
 		if( window.innerWidth >= 822){
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		const th = $(this);
 
-		$("body, header, .btns-top").css('background-color', '#D8E377');
+		$("body, header, .btns-top, .menu-header").css('background-color', '#D8E377');
 	
 		
 		if( window.innerWidth >= 822){
