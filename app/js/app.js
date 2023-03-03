@@ -69,9 +69,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		const th = $(this);
 
-		$("body").css('background-color', function() {
-			return th.data('bg-color');
-		});
+		$("body").css('background-color', th.data('bg-color'));
+		$("header").css('background-color', th.data('bg-color'))
 
 	
 		if( window.innerWidth >= 822){
@@ -86,10 +85,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		const th = $(this);
 
-		$("body").css('background-color', function() {
-			return '#D8E377';
-		});
-
+		$("body").css('background-color', '#D8E377');
+		$("header").css('background-color', '#D8E377')
 		
 		if( window.innerWidth >= 822){
 			th.children('.img-wrap').removeClass('animate__fadeIn');
@@ -100,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 
 
-
+	$("main").css("margin-top", $("header").outerHeight()  + "px");
 
 
 
