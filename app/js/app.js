@@ -5,50 +5,43 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	//burger and category
 
-	let burger = document.getElementById('burger');
-	let categoryBtn = document.getElementById("btn-category");
-	let burgerMenu = document.getElementById('menu-burger');
-	let cateryMenu = document.getElementById("menu-category");;
-	let body = document.querySelector("body");
-	
-
-	burger.addEventListener('click',function(){
-		this.classList.toggle("burger-active");
-		burgerMenu.classList.toggle("overlay");
-
-		cateryMenu.classList.remove("overlay");
-		categoryBtn.classList.remove("btn-category-active");
+	$('#burger').on('click', function(){
+		const th = $(this);
+		if( th.hasClass('burger-active') ){
+			$('#menu-category').removeClass('overlay');
+			$('#menu-burger').removeClass('overlay');
+			th.removeClass('burger-active');
+		}
+		else{
+			th.addClass('burger-active');
+			$('#menu-burger').addClass('overlay')
+		}
 	});
 
+	$('#btn-category').on('click', function(){
+		const th = $(this);
 
-	categoryBtn.addEventListener('click',function(){
-		this.classList.toggle("btn-category-active");
-		cateryMenu.classList.toggle("overlay");
+		$('#burger').addClass('burger-active');
+		$('#menu-category').addClass('overlay');
 
-		burgerMenu.classList.remove("overlay");
-		burger.classList.remove("burger-active");
 	});
 
-	
-	$('.btn-category-off').on('click', function(){
-		$('#menu-category').removeClass('overlay')
-	});
 	
 
 	//review btn-category burger 
 
-	$('#btn-category , #burger').on('click', function(){
+	// $('#btn-category , #burger').on('click', function(){
 
-		if($('#menu-category, #menu-burger').hasClass('overlay')){
+	// 	if($('#menu-category, #menu-burger').hasClass('overlay')){
 			
-			body.classList.add("overflow");
+	// 		body.classList.add("overflow");
 	
-		}else{
+	// 	}else{
 			
-			body.classList.remove("overflow");
+	// 		body.classList.remove("overflow");
 	
-		}
-	});
+	// 	}
+	// });
 
 
 
