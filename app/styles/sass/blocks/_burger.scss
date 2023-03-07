@@ -5,7 +5,7 @@
     margin-left: auto;
     margin-right: 0;
     width: 40px;
-    margin-bottom: 1rem;
+	
     @include media-for (null, $sm){
         margin-bottom: .3rem;
     }
@@ -14,7 +14,7 @@
         display: block;
         height: 3px;
         width: 40px;
-        background-color: $balck;  
+        background-color: $black;  
         position: relative;
         transition: .2s all ease-in;
         margin-bottom: 9px;

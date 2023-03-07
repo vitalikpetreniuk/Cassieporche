@@ -16,13 +16,11 @@ $big-desktop: 1600px; // Large tablets and desktops
 			@content;
 		}
 	}
-
 	@else if ($min-width !=null) {
 		@media (min-width: #{$min-width}) {
 			@content;
 		}
 	}
-
 	@else if ($max-width !=null) {
 		@media (max-width: #{$max-width - 1px}) {
 			@content;

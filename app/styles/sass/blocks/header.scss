@@ -1,23 +1,26 @@
 header{
 	position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-	padding: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 1.3em 0 0;
 	z-index: 60;
 	transition: all .4s ease-in-out;
-	background-color: $bg-body;
+	//background-color: $bg-body;
+	
 	@include media-for (null, $tablet){
 		padding: .6rem 0 0;
 	}
-	.logo{
-		svg{
-			width: 401px;
-			height: 88px;
-			@include media-for (null, $tablet){
-				height: 52px;
-				width: 228px;
-			}
+
+	.logo {
+		display: inline-block;
+		position: relative;
+		margin-left: -5px;
+
+		svg {
+			display: block;
+			height: 6.218vw;
+			width: auto;
 		}
 	}
 }

@@ -2,17 +2,19 @@
     position: fixed;
     width: 100%;
     left: 0;
-    background: $bg-body;
+    //background: $bg-body;
     z-index: 50;
     transition: all .4s ease-in-out;
     padding-bottom: 10px;
+	
     button{
-        font-family: $userfont;
-		position: relative;
-		display: block;
-		border-radius: 100%;
-		font-size: 20px;
-		color: $black;
+			padding-left: 2px;
+			font-family: $userfont;
+			position: relative;
+			display: block;
+			border-radius: 100%;
+			font-size: 20px;
+			color: $black;
         @include media-for (null, $sm){
             padding: 0;
         }
