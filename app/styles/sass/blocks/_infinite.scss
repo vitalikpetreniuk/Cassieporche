@@ -21,15 +21,20 @@ main {
 
 		a {
 			display: flex;
+			flex-direction: column;
 			justify-content: center;
 			align-items: flex-start;
 			text-decoration: none;
 			padding: 20px 0;
 
 			.item-ipad-title {
-				max-width: 70%;
 				position: relative;
 				overflow: visible;
+				
+				display: flex;
+				align-items: center;
+				width: 100%;
+				max-width: 70%;
 
 				span {
 					color: #000000;
@@ -53,43 +58,32 @@ main {
 					color: #000000;
 				}
 			}
+			.item-ipad-img {
+				width: 100%;
+				height: 80%;
+				display: none;
+
+				img {
+					visibility: hidden;
+
+					max-width: 100%;
+					height: auto;
+					vertical-align: middle;
+				}
+			}
 			&:hover .item-ipad-title span {
 				color: #000000;
 			}
 		}
 	}
-}
-
-.MagicScroll .mcs-items-container:hover .item {
-	a {
-		opacity: .4;
+	.mcs-items-container:hover .item {
+		a {
+			opacity: .4;
+		}
+		a:hover {
+			opacity: 1;
+		}
 	}
-	a:hover {
-		opacity: 1;
-	}
-}
-
-.item-ipad-new {
-	justify-content: center;
-	flex-direction: column;
-}
-.item-ipad-img {
-	width: 100%;
-	height: 80%;
-	display: none;
-
-	img {
-		visibility: hidden;
-
-		max-width: 100%;
-		height: auto;
-		vertical-align: middle;
-	}
-}
-.item-ipad-title {
-	width: 100%;
-	display: flex;
-	align-items: center;
 }
 
 @media (min-width: 1025px) {
@@ -135,6 +129,7 @@ main {
 			}
 			
 			img {
+				visibility: visible;
 				position: absolute;
 				width: 100%;
 				height: 100%;
@@ -161,5 +156,19 @@ main {
 	.container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl, .MagicScroll .item {
 		padding-left: 20px;
 		padding-right: 20px;
+	}
+}
+
+@media (max-height: 700px) and (min-width: 768px) {
+	.MagicScroll .item a .item-ipad-title {
+		max-width: 130vh;
+	}
+	.MagicScroll .item a .item-ipad-title span {
+		font-size: 7.8vh;
+	}
+}
+@media (max-height: 800px) and (min-width: 768px) and (max-width: 1024px) {
+	.MagicScroll .item a .item-ipad-title span {
+		font-size: 5vh;
 	}
 }
