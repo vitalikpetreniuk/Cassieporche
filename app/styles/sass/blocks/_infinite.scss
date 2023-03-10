@@ -193,9 +193,6 @@ main {
 	}
 }
 @media (max-width: 821px) {
-	main {
-		padding-top: 80px;
-	}
 	.MagicScroll .item {
 		padding: 0 30px;
 	}
@@ -227,8 +224,15 @@ main {
 	}
 }
 @media (max-width: 575px) {
+	#menu-burger, #menu-category {
+		align-items: flex-start !important;
+	}
 	#menu-burger nav ul li a, #menu-category nav ul li a {
 		padding-top: 12px !important;
+	}
+	#menu-burger .menu-header {
+		height: auto !important;
+		padding-top: 20vh !important;
 	}
 }
 
