@@ -27,17 +27,15 @@ $gutter: $grid-gutter-width
 
 // FONTS LOAD SECTION
 
-@mixin font($fname, $fstyle, $fweight, $furl)
+@mixin font($fname, $fstyle, $furl)
 	@font-face
 		font-family: $fname
 		font-style: $fstyle
-		font-weight: $fweight
 		src: url($furl) format('woff2')
 
 
-@include font('druk', normal, 700, '../fonts/druk_bold.woff2')
-@include font('helvetica', normal, 400, '../fonts/helvetica_regular.woff2')
-@include font('helvetica', normal, 300, '../fonts/helvetica_light.woff2')
+@include font('druk', normal, '../fonts/Druk-Medium-Web.woff2')
+@include font('helvetica', normal, '../fonts/font.woff2')
  
 
 // GENERAL CSS SETTINGS

@@ -9,7 +9,7 @@ header{
 	//background-color: $bg-body;
 	
 	@include media-for (null, $tablet){
-		padding: .6rem 0 0;
+		padding: 20px 0;
 	}
 
 	.logo {

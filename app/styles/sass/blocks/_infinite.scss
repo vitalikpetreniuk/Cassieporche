@@ -140,7 +140,7 @@ main {
 }
 @media (max-width: 1024px) {
 	main {
-		padding-top: 10vw;
+		padding-top: 100px;
 	}
 	.MagicScroll .item a {
 		flex-direction: row;
@@ -184,8 +184,18 @@ main {
 			}
 		}
 	}
+	.MagicScroll .mcs-items-container:hover .item a {
+		opacity: 1;
+	}
+	.btns-top button {
+		font-size: 20px;
+		letter-spacing: .4px;
+	}
 }
 @media (max-width: 821px) {
+	main {
+		padding-top: 80px;
+	}
 	.MagicScroll .item {
 		padding: 0 30px;
 	}
@@ -198,11 +208,27 @@ main {
 	header .logo {
 		margin-left: -3px;
 	}
+	.btns-top button {
+		font-size: 15px;
+		letter-spacing: .3px;
+	}
+	#menu-burger nav ul li a, #menu-category nav ul li a {
+		padding-top: 16px !important;
+		margin-bottom: 0 !important;
+	}
 }
 @media (max-width: 767px) {
+	header .logo svg {
+		height: 12vw !important;
+	}
 	.container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl, .MagicScroll .item {
 		padding-left: 20px;
 		padding-right: 20px;
+	}
+}
+@media (max-width: 575px) {
+	#menu-burger nav ul li a, #menu-category nav ul li a {
+		padding-top: 12px !important;
 	}
 }
 
