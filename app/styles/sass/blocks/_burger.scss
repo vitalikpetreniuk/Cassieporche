@@ -1,44 +1,44 @@
-#burger{
-    position: relative;
-    cursor: pointer;
-    z-index: 150;
-    margin-left: auto;
-    margin-right: 0;
-    width: 40px;
+#close{
+	position: fixed;
+	top: calc(3.1vw + .65em);
+	right: 55px;
 	
-    @include media-for (null, $sm){
-        margin-bottom: .3rem;
-    }
-    
-    span{
-        display: block;
-        height: 3px;
-        width: 40px;
-        background-color: $black;  
-        position: relative;
-        transition: .2s all ease-in;
-        margin-bottom: 9px;
-        
-        &:last-child{
-            margin-bottom: 0px;
-        }
-    } 
-}
+	cursor: pointer;
+	z-index: 150;
+	margin-left: auto;
+	margin-right: 0;
+	width: 40px;
 
-.burger-active{
+	@include media-for (null, $sm){
+			margin-bottom: .3rem;
+	}
+	
+	span{
+			display: block;
+			height: 3px;
+			width: 40px;
+			background-color: $black;  
+			position: relative;
+			transition: .2s all ease-in;
+			margin-bottom: 9px;
+			
+			&:last-child{
+					margin-bottom: 0px;
+			}
+	}
 
-    span:first-child{
-        transform: rotate(45deg);
-        top: 7px;
-    }
+	span:first-child{
+		transform: rotate(45deg);
+		top: 7px;
+	}
 
-    span:nth-child(2n){
-        opacity: 0;
-        transition: .2s all ease-in;
-    }
+	span:nth-child(2n){
+		opacity: 0;
+		transition: .2s all ease-in;
+	}
 
-    span:last-child{
-        transform: rotate(-45deg);
-        top: -17px;
-    }
+	span:last-child{
+		transform: rotate(-45deg);
+		top: -17px;
+	}
 }

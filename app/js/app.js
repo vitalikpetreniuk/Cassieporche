@@ -4,24 +4,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	//burger and category
 
-	$('#burger').on('click', function(){
-		const th = $(this);
-		if( th.hasClass('burger-active') ){
-			$('#menu-category').removeClass('overlay');
-			$('#menu-burger').removeClass('overlay');
-			th.removeClass('burger-active');
-		}
-		else{
-			th.addClass('burger-active');
-			$('#menu-burger').addClass('overlay')
-		}
+	// $('#burger').on('click', function(){
+	// 	const th = $(this);
+	// 	if( th.hasClass('burger-active') ){
+	// 		$('#menu-category').removeClass('overlay');
+	// 		$('#menu-burger').removeClass('overlay');
+	// 		th.removeClass('burger-active');
+	// 	}
+	// 	else{
+	// 		th.addClass('burger-active');
+	// 		$('#menu-burger').addClass('overlay')
+	// 	}
+	// });
+	$('#close').on('click', function(){
+		$('#menu-category').removeClass('overlay');
 	});
 	$('#btn-category').on('click', function(){
 		const th = $(this);
-
-		$('#burger').addClass('burger-active');
 		$('#menu-category').addClass('overlay');
-
 	});
 
 	

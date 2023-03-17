@@ -216,6 +216,10 @@ main {
 		padding-top: 16px !important;
 		margin-bottom: 0 !important;
 	}
+
+	#close {
+		right: 30px;
+	}
 }
 @media (max-width: 767px) {
 	header .logo svg {
@@ -224,6 +228,17 @@ main {
 	.container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl, .MagicScroll .item {
 		padding-left: 20px;
 		padding-right: 20px;
+	}
+
+	#close {
+		top: 20px;
+		right: 20px;
+	}
+	#close span:first-child {
+		top: 19px;
+	}
+	#close span:last-child {
+		top: -5px;
 	}
 }
 @media (max-width: 575px) {
