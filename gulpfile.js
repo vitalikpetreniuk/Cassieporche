@@ -47,7 +47,6 @@ return src(['app/js/*.js', '!app/js/*.min.js'])
 	mode: 'production',
 	performance: { hints: false },
 	plugins: [
-		new webpack.ProvidePlugin({ $: 'jquery', jQuery: 'jquery', 'window.jQuery': 'jquery' }), // jQuery (npm i jquery)
 	],
 	module: {
 		rules: [
