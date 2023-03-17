@@ -6,7 +6,8 @@
 	transition: background-color .4s ease-in-out;
 }
 main {
-	padding-top: calc(2em + 6.1vw);
+	padding-top: 0;
+	width: 100% !important;
 }
 .hoverImage-list {
 	display: none;
@@ -144,9 +145,6 @@ main {
 	}
 }
 @media (max-width: 1024px) {
-	main {
-		padding-top: 100px;
-	}
 	.MagicScroll .item a {
 		flex-direction: row;
 		padding: 10px 0;
