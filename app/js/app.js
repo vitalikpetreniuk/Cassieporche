@@ -1,3 +1,5 @@
+var $ = jQuery;
+
 document.addEventListener('DOMContentLoaded', () => {
 
   // Custom JS
