@@ -14,7 +14,9 @@
     z-index: 60;
 	
 		display: flex;
-		align-items: center;
+		align-items: flex-start;
+
+		.container-fluid {margin-top: 9.4vw;}
 
     &::-webkit-scrollbar {
         width: 0;
@@ -95,9 +97,10 @@
                 font-family: helvetica, sans-serif ;
                 a{
 										display: block;
-										padding-top: 3vh;
-                    font-size: 11.25vh;
+										padding-top: 1.7vw;
+                    font-size: 6.3vw;
                     line-height: 1;
+										letter-spacing: -.19vw;
 									
 										transition: color .5s;
                 }
@@ -117,7 +120,7 @@
                 @include media-for (null, $sm){
                     width: 100%;
                     a{
-                        font-size: 42px;
+                        font-size: 52px;
                     }
                 }
             }
